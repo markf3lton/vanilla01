@@ -24,8 +24,9 @@
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
+        "drupal/mysql56": "^1.1",
         "drupal/stage_file_proxy": "^1.1",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.2"
     },
     "conflict": {
         "drupal/drupal": "*"
