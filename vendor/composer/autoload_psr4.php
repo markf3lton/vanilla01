@@ -64,6 +64,7 @@ return array(
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/EmailValidator'),
     'Drush\\Internal\\' => array($vendorDir . '/drush/drush/src/internal-forks'),
     'Drush\\' => array($vendorDir . '/drush/drush/src'),
+    'Drupal\\Driver\\Database\\mysql\\' => array($vendorDir . '/drupal/mysql56'),
     'Drupal\\Driver\\' => array($baseDir . '/docroot/drivers/lib/Drupal/Driver'),
     'Drupal\\Core\\' => array($baseDir . '/docroot/core/lib/Drupal/Core'),
     'Drupal\\Composer\\Plugin\\Scaffold\\' => array($vendorDir . '/drupal/core-composer-scaffold'),

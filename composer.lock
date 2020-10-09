@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa9bf7359c1b00dfd5f8aa13f3509edb",
+    "content-hash": "679b951c7fb603f15f54f0ccfa5eab32",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1558,18 +1558,12 @@
                     "lib/Drupal/Core/Site/Settings.php"
                 ]
             },
-            "scripts": {
-                "pre-autoload-dump": [
-                    "Drupal\\Core\\Composer\\Composer::preAutoloadDump"
-                ],
-                "post-autoload-dump": [
-                    "Drupal\\Core\\Composer\\Composer::ensureHtaccess"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Drupal is an open source content management platform powering millions of websites and applications."
+            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+            "time": "2020-10-07T19:33:16+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -1607,6 +1601,7 @@
                     "Drupal\\Composer\\Plugin\\Scaffold\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1614,7 +1609,8 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ]
+            ],
+            "time": "2020-08-07T22:30:24+00:00"
         },
         {
             "name": "drupal/core-project-message",
@@ -1643,6 +1639,7 @@
                     "Drupal\\Composer\\Plugin\\ProjectMessage\\": "."
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1650,7 +1647,8 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ]
+            ],
+            "time": "2020-08-02T22:04:44+00:00"
         },
         {
             "name": "drupal/core-recommended",
@@ -1727,10 +1725,74 @@
                 "webflo/drupal-core-strict": "*"
             },
             "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
+            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
+            "time": "2020-10-07T19:33:16+00:00"
+        },
+        {
+            "name": "drupal/mysql56",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/mysql56.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mysql56-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "cca28b339ed008dbbefa70a1442f86e6a8f0563c"
+            },
+            "require": {
+                "drupal/core": "~9.0.0-beta3 || 9.1.*"
+            },
+            "type": "library",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1602118356",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "installer-name": "mysql"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\Driver\\Database\\mysql\\": ""
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TravisCarden",
+                    "homepage": "https://www.drupal.org/user/236758"
+                },
+                {
+                    "name": "acquia",
+                    "homepage": "https://www.drupal.org/user/1231722"
+                },
+                {
+                    "name": "balsama",
+                    "homepage": "https://www.drupal.org/user/223087"
+                },
+                {
+                    "name": "effulgentsia",
+                    "homepage": "https://www.drupal.org/user/78040"
+                }
+            ],
+            "description": "MySQL 5.6 Driver for Drupal 9.0.",
+            "homepage": "https://www.drupal.org/project/mysql56",
+            "support": {
+                "source": "https://git.drupalcode.org/project/mysql56"
+            }
         },
         {
             "name": "drupal/stage_file_proxy",
